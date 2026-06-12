@@ -1,6 +1,6 @@
 @font-face {
     font-family: "actinia";
-    src: url("../Tatto.Pet/Fonts/Actinia/Actinia-Regular.otf") format("opentype");
+    src: url("./Tatto.Pet/Fonts/Actinia/Actinia-Regular.otf") format("opentype");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: "actinia";
-    src: url("../Tatto.Pet/Fonts/Actinia/Actinia-Italic.otf") format("opentype");
+    src: url("./Tatto.Pet/Fonts/Actinia/Actinia-Italic.otf") format("opentype");
     font-weight: 400;
     font-style: italic;
     font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: "actinia";
-    src: url("../Tatto.Pet/Fonts/Actinia/Actinia-Bold.otf") format("opentype");
+    src: url("./Tatto.Pet/Fonts/Actinia/Actinia-Bold.otf") format("opentype");
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -24,7 +24,7 @@
 
 @font-face {
     font-family: "actinia";
-    src: url("../Tatto.Pet/Fonts/Actinia/Actinia-BoldItalic.otf") format("opentype");
+    src: url("./Tatto.Pet/Fonts/Actinia/Actinia-BoldItalic.otf") format("opentype");
     font-weight: 700;
     font-style: italic;
     font-display: swap;
@@ -34,7 +34,7 @@
 
 @font-face {
     font-family: "Kameron";
-    src: url("../Tatto.Pet/Fonts/Kameron/static/Kameron-Regular.ttf") format("truetype");
+    src: url("./Tatto.Pet/Fonts/Kameron/static/Kameron-Regular.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -43,7 +43,7 @@
 
 @font-face {
     font-family: "Kameron";
-    src: url("../Tatto.Pet/Fonts/Kameron/static/Kameron-Medium.ttf") format("truetype");
+    src: url("./Tatto.Pet/Fonts/Kameron/static/Kameron-Medium.ttf") format("truetype");
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -52,7 +52,7 @@
 
 @font-face {
     font-family: "Kameron";
-    src: url("../Tatto.Pet/Fonts/Kameron/static/Kameron-SemiBold.ttf") format("truetype");
+    src: url("./Tatto.Pet/Fonts/Kameron/static/Kameron-SemiBold.ttf") format("truetype");
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -61,7 +61,7 @@
 
 @font-face {
     font-family: "Kameron";
-    src: url("../Tatto.Pet/Fonts/Kameron/static/Kameron-Bold.ttf") format("truetype");
+    src: url("./Tatto.Pet/Fonts/Kameron/static/Kameron-Bold.ttf") format("truetype");
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -233,7 +233,6 @@ ul {
     color: #fff;
 }
 
-.main {}
 
 .welcome {
     position: relative;
@@ -252,7 +251,7 @@ ul {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url("../Tatto.Pet/first_backgroun_img.jpg");
+    background: url("./Tatto.Pet/first_backgroun_img.jpg");
     /* Или просто фон */
     background-position: center;
     background-repeat: no-repeat;
