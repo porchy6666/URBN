@@ -1,6 +1,8 @@
 @font-face {
     font-family: "actinia";
-    src: url("./Tatto.Pet/Fonts/Actinia/Actinia-Regular.otf") format("opentype");
+    src: 
+    url("./assets/Fonts/Actinia/Actinia-Regular.woff2") format("woff2"),
+    url("./assets/Fonts/Actinia/Actinia-Regular.otf") format("opentype");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -8,7 +10,9 @@
 
 @font-face {
     font-family: "actinia";
-    src: url("./Tatto.Pet/Fonts/Actinia/Actinia-Italic.otf") format("opentype");
+    src:
+    url("./assets/Fonts/Actinia/Actinia-Italic.woff2") format("woff2"),
+    url("./assets/Fonts/Actinia/Actinia-Italic.otf") format("opentype");
     font-weight: 400;
     font-style: italic;
     font-display: swap;
@@ -16,7 +20,9 @@
 
 @font-face {
     font-family: "actinia";
-    src: url("./Tatto.Pet/Fonts/Actinia/Actinia-Bold.otf") format("opentype");
+    src:
+    url("./assets/Fonts/Actinia/Actinia-Bold.woff2") format("woff2"),
+    url("./assets/Fonts/Actinia/Actinia-Bold.otf") format("opentype");
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -24,7 +30,9 @@
 
 @font-face {
     font-family: "actinia";
-    src: url("./Tatto.Pet/Fonts/Actinia/Actinia-BoldItalic.otf") format("opentype");
+    src:
+    url("./assets/Fonts/Actinia/Actinia-BoldItalic.woff2") format("woff2"),
+    url("./assets/Fonts/Actinia/Actinia-BoldItalic.otf") format("opentype");
     font-weight: 700;
     font-style: italic;
     font-display: swap;
@@ -34,7 +42,7 @@
 
 @font-face {
     font-family: "Kameron";
-    src: url("./Tatto.Pet/Fonts/Kameron/static/Kameron-Regular.ttf") format("truetype");
+    src: url("./assets/Fonts/Kameron/static/Kameron-Regular.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -43,7 +51,7 @@
 
 @font-face {
     font-family: "Kameron";
-    src: url("./Tatto.Pet/Fonts/Kameron/static/Kameron-Medium.ttf") format("truetype");
+    src: url("./assets/Fonts/Kameron/static/Kameron-Medium.ttf") format("truetype");
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -52,7 +60,7 @@
 
 @font-face {
     font-family: "Kameron";
-    src: url("./Tatto.Pet/Fonts/Kameron/static/Kameron-SemiBold.ttf") format("truetype");
+    src: url("./assets/Fonts/Kameron/static/Kameron-SemiBold.ttf") format("truetype");
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -61,7 +69,7 @@
 
 @font-face {
     font-family: "Kameron";
-    src: url("./Tatto.Pet/Fonts/Kameron/static/Kameron-Bold.ttf") format("truetype");
+    src: url("./assets/Fonts/Kameron/static/Kameron-Bold.ttf") format("truetype");
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -76,14 +84,11 @@
 }
 
 
-
 body {
     background-color: #2C2C2C;
     margin: 0;
-
     overflow-x: hidden;
-    font-family: "Kameron", serif;
-    font-family: "Kantumruy", sans-serif;
+    font-family: "Kantumruy", "Kameron", serif;
 }
 
 h1,
@@ -251,7 +256,7 @@ ul {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url("./Tatto.Pet/first_backgroun_img.jpg");
+    background: url("./assets/first_background_img.jpg");
     /* Или просто фон */
     background-position: center;
     background-repeat: no-repeat;
@@ -580,7 +585,11 @@ span {
 .modal {
     display: none;
     position: fixed;
-    inset: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     background: rgba(0, 0, 0, 0.8);
     z-index: 100;
 
@@ -855,6 +864,7 @@ span {
     border-radius: 40px;
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.08);
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     overflow: hidden;
     transition: all 0.3s ease;
@@ -894,7 +904,7 @@ span {
 
 .answer {
     max-height: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
     padding: 0 24px;
     color: #bfb7ab;
     line-height: 1.5;
@@ -911,14 +921,10 @@ span {
     color: #C5BAAA;
 }
 
-.faq-item input:checked~.answer {
-    max-height: 300px;
-    padding: 0 24px 20px;
-    opacity: 1;
-}
+
 
 .faq-item input:checked~.answer {
-    max-height: 1000px;
+    max-height: 4000px;
     opacity: 1;
     transform: translateY(0);
     padding: 15px;
@@ -945,7 +951,6 @@ span {
 
 .details_p {
     background-color: #2F2E2D;
-    padding: px;
     border: 1px solid #ccc;
     margin-top: 5px;
 }
@@ -1426,7 +1431,7 @@ span {
         height: auto;
         padding: 20px 24px;
         font-size: 20px;
-        line-height: 26px;
+        line-height: 32px;
     }
 }
 
@@ -1495,6 +1500,7 @@ span {
         right: 0;
         width: 50%;
         height: 100vh;
+        height: 100dvh;
         background-color: #000000;
         z-index: 999;
         padding: 40px 24px;
@@ -1644,6 +1650,10 @@ span {
         margin-top: 120px;
     }
 
+    .advantages__title{
+        margin-top: 0;
+    }
+
     .header .btn {
         display: none;
     }
@@ -1686,13 +1696,53 @@ span {
         font-size: 72px;
         line-height: 72px;
     }
+
+.advantages__img{
+    width: 140px;
+    height: 140px;
+}
+.advantages__cardtitle{
+    font-size: 20px;
+    line-height: 28px;
+}
 }
 
 
 @media (max-width:821px) {
+
+    .servises .container{
+        row-gap: 20px;
+    }
+
+    .servise__img{
+        width: 140px;
+        height: 140px;
+    }
+
+    .servise__card{
+
+    }
+
+    .servise__title{
+        font-size: 18px;
+    }
+
+    .servise__desc{
+        margin-top: 7px;
+    }
+
+
     .masters__container {
         justify-content: center;
     }
+
+    .advantages__container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, 1fr);
+    box-sizing: border-box;
+    place-items: center;
+} 
 }
 
 
@@ -1759,7 +1809,13 @@ span {
 }
 
 
+
+
+
 @media (max-width: 700px) {
+    .advantages__card{
+    margin-top: 10px;
+}
     .contacts__container {
         flex-direction: column;
         height: auto;
@@ -1813,10 +1869,25 @@ span {
         padding: 80px 0;
     }
 
-    .advantages__container {
-        flex-direction: column;
-        align-items: center;
-    }
+    .advantages__img{
+    width: 88px;
+    height: 88px;
+}
+.advantages__cardtitle{
+    font-size: 20px;
+    line-height: 26px;
+    margin-top: 10px;
+}
+.advantages__card{
+    width: 170px;
+    height: 140px;
+    margin: 15px;
+    /* padding: 0 130px; */
+}
+.advantages__container{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 }
 
 
@@ -1869,9 +1940,9 @@ span {
     }
 
     .question {
-        font-size: 22px;
-        line-height: 26px;
-        padding: 0 16px;
+        font-size: 20px;
+        line-height: 32px;
+        padding: 7px 16px;
     }
 }
 
@@ -1991,6 +2062,26 @@ span {
 }
 
 
+@media(max-width:440px){
+.advantages__img{
+    width: 60px;
+    height: 60px;
+}
+.advantages__cardtitle{
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 5px;
+}
+.advantages__card{
+    width: 130px;
+    height: 120px;
+}
+.advantages__container{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+}
+
 
 @media(max-width:418px) {
     .about__title {
@@ -2048,16 +2139,6 @@ span {
         font-size: 56px;
         line-height: 58px;
         text-align: center;
-    }
-
-    .advantages__title {
-        font-size: 46px;
-        line-height: 48px;
-    }
-
-    .advantages__img {
-        width: 140px;
-        height: 140px;
     }
 
     .faq__title {
@@ -2138,8 +2219,6 @@ span {
         width: 92%;
     }
 }
-
-
 
 
 /* * {
