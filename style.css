@@ -419,6 +419,7 @@ span {
     color: #FFFFFF8F;
     margin-bottom: 40px;
     font-family: "Kantumruy", sans-serif;
+    white-space: pre-line;
 }
 
 .about__socials-link1 {
