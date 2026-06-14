@@ -142,8 +142,6 @@ const masters = [
 ];
 
 
-
-
 const galleryImages = [
   "./assets/Galary/photo_1.jpg",
   "./assets/Galary/photo_2.jpg",
@@ -226,7 +224,6 @@ document.body.style.overflow = "";
 });
 
 
-
 gallery.addEventListener("click", (e) => {
   if (e.target.tagName === "IMG") {
     const src = e.target.src;
@@ -237,7 +234,6 @@ gallery.addEventListener("click", (e) => {
     gallery.classList.add("single");
   }
 });
-
 
 
 document.querySelectorAll(".galary__img").forEach(img => {
@@ -254,7 +250,6 @@ document.querySelectorAll(".galary__img").forEach(img => {
     document.body.style.overflow = "hidden";
   });
 });
-
 
 
 // для галереи
@@ -292,7 +287,6 @@ document.querySelectorAll(".galary__img").forEach(img => {
 
 
 //about
-
 let current = 0;
 aboutImg.src = aboutImages[current];
 setInterval(() => {
@@ -308,7 +302,6 @@ setInterval(() => {
 }, 3000);
 
 
-
 // ==========================================
 // Основная модалка
 // ==========================================
@@ -319,9 +312,8 @@ const burgerOverlay = document.getElementById('burgerOverlay');
 const burgerClose = document.getElementById('burgerClose');
 const menuLinks = document.querySelectorAll('.burger-menu__link');
 const galleryModal = document.querySelector('.modal')
-// Функция для открытия меню
+
 function openMenu() {
-    // принудительно закрываю модалку
     if (galleryModal && galleryModal.classList.contains('active')) {
         galleryModal.classList.remove('active');
     }
@@ -331,19 +323,19 @@ function openMenu() {
     document.body.style.overflow = 'hidden'; 
 }
 
-// Функция для закрытия меню
+
 function closeMenu() {
     burgerMenu.classList.remove('active');
     burgerOverlay.classList.remove('active');
     document.body.style.overflow = ''; /* Возвращаем скролл сайту */
 }
 
-// события клика
+
 if (burgerBtn) burgerBtn.addEventListener('click', openMenu);
 if (burgerClose) burgerClose.addEventListener('click', closeMenu);
 if (burgerOverlay) burgerOverlay.addEventListener('click', closeMenu);
 
-// Закрываю меню при клике на любую ссылку чтобы переместиться к секции
+
 menuLinks.forEach(link => {
     link.addEventListener('click', closeMenu);
 });

@@ -1,8 +1,8 @@
 @font-face {
     font-family: "actinia";
-    src: 
-    url("./assets/Fonts/Actinia/Actinia-Regular.woff2") format("woff2"),
-    url("./assets/Fonts/Actinia/Actinia-Regular.otf") format("opentype");
+    src:
+        url("./assets/Fonts/Actinia/Actinia-Regular.woff2") format("woff2"),
+        url("./assets/Fonts/Actinia/Actinia-Regular.otf") format("opentype");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -11,8 +11,8 @@
 @font-face {
     font-family: "actinia";
     src:
-    url("./assets/Fonts/Actinia/Actinia-Italic.woff2") format("woff2"),
-    url("./assets/Fonts/Actinia/Actinia-Italic.otf") format("opentype");
+        url("./assets/Fonts/Actinia/Actinia-Italic.woff2") format("woff2"),
+        url("./assets/Fonts/Actinia/Actinia-Italic.otf") format("opentype");
     font-weight: 400;
     font-style: italic;
     font-display: swap;
@@ -21,8 +21,8 @@
 @font-face {
     font-family: "actinia";
     src:
-    url("./assets/Fonts/Actinia/Actinia-Bold.woff2") format("woff2"),
-    url("./assets/Fonts/Actinia/Actinia-Bold.otf") format("opentype");
+        url("./assets/Fonts/Actinia/Actinia-Bold.woff2") format("woff2"),
+        url("./assets/Fonts/Actinia/Actinia-Bold.otf") format("opentype");
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -31,8 +31,8 @@
 @font-face {
     font-family: "actinia";
     src:
-    url("./assets/Fonts/Actinia/Actinia-BoldItalic.woff2") format("woff2"),
-    url("./assets/Fonts/Actinia/Actinia-BoldItalic.otf") format("opentype");
+        url("./assets/Fonts/Actinia/Actinia-BoldItalic.woff2") format("woff2"),
+        url("./assets/Fonts/Actinia/Actinia-BoldItalic.otf") format("opentype");
     font-weight: 700;
     font-style: italic;
     font-display: swap;
@@ -46,7 +46,6 @@
     font-weight: 400;
     font-style: normal;
     font-display: swap;
-
 }
 
 @font-face {
@@ -55,7 +54,6 @@
     font-weight: 500;
     font-style: normal;
     font-display: swap;
-
 }
 
 @font-face {
@@ -64,7 +62,6 @@
     font-weight: 600;
     font-style: normal;
     font-display: swap;
-
 }
 
 @font-face {
@@ -73,7 +70,6 @@
     font-weight: 700;
     font-style: normal;
     font-display: swap;
-
 }
 
 
@@ -111,7 +107,6 @@ h4 {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-
     padding-left: 15px;
     padding-right: 15px;
     box-sizing: border-box;
@@ -121,10 +116,7 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     max-width: 1200px;
-
-
     box-sizing: border-box;
 }
 
@@ -156,30 +148,24 @@ h4 {
     opacity: 0.9;
 }
 
-/* линия */
+
 .header__links::after {
     content: "";
     position: absolute;
-
     left: 0;
     bottom: -4px;
-
     width: 100%;
     height: 2px;
-
     background: #fff;
-
     transform: scaleX(0);
     transform-origin: center;
-
     transition: transform 0.3s ease;
 }
 
-/* анимация линии */
+
 .header__links:hover::after {
     transform: scaleX(1);
 }
-
 
 
 ul {
@@ -257,12 +243,10 @@ ul {
     right: 0;
     bottom: 0;
     background: url("./assets/first_background_img.jpg");
-    /* Или просто фон */
     background-position: center;
     background-repeat: no-repeat;
     filter: blur(3px);
     z-index: -1;
-    /* Уводит фон назад */
     background-size: cover;
 }
 
@@ -284,7 +268,7 @@ ul {
 }
 
 .welcome__title {
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
     font-size: 110px;
     line-height: 108px;
@@ -298,7 +282,7 @@ ul {
 }
 
 .welcome__desc {
-    font-weight: 300;
+    font-weight: 500;
     font-size: 24px;
     line-height: 32px;
     letter-spacing: 0;
@@ -622,9 +606,7 @@ span {
     padding: 20px;
     border-radius: 10px;
     max-height: 90vh;
-    /* чтобы не вылезала за экран */
     overflow-y: auto;
-    /* скролл если много фоток */
 }
 
 .modal__big-img {
@@ -847,7 +829,6 @@ span {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 16px 24px;
-    /* row / column */
     padding-left: 15px;
     padding-right: 15px;
     box-sizing: border-box
@@ -1195,9 +1176,7 @@ span {
 .footer__list-item a {
     display: flex;
     align-items: center;
-    /* выравнивание по вертикали */
     gap: 8px;
-    /* расстояние между текстом и иконкой */
     color: #C5BAAAB8;
     text-decoration: none;
 }
@@ -1237,7 +1216,6 @@ span {
 
     .servise__card {
         flex-shrink: 0;
-        /* Запрещаем карточкам сжиматься меньше 193px */
     }
 
     .masters__container {
@@ -1651,7 +1629,7 @@ span {
         margin-top: 120px;
     }
 
-    .advantages__title{
+    .advantages__title {
         margin-top: 0;
     }
 
@@ -1698,37 +1676,36 @@ span {
         line-height: 72px;
     }
 
-.advantages__img{
-    width: 140px;
-    height: 140px;
-}
-.advantages__cardtitle{
-    font-size: 20px;
-    line-height: 28px;
-}
+    .advantages__img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .advantages__cardtitle {
+        font-size: 20px;
+        line-height: 28px;
+    }
 }
 
 
 @media (max-width:821px) {
 
-    .servises .container{
+    .servises .container {
         row-gap: 20px;
     }
 
-    .servise__img{
+    .servise__img {
         width: 140px;
         height: 140px;
     }
 
-    .servise__card{
+    .servise__card {}
 
-    }
-
-    .servise__title{
+    .servise__title {
         font-size: 18px;
     }
 
-    .servise__desc{
+    .servise__desc {
         margin-top: 7px;
     }
 
@@ -1737,13 +1714,13 @@ span {
         justify-content: center;
     }
 
-    .advantages__container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    grid-template-rows: repeat(2, 1fr);
-    box-sizing: border-box;
-    place-items: center;
-} 
+    .advantages__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        box-sizing: border-box;
+        place-items: center;
+    }
 }
 
 
@@ -1810,13 +1787,11 @@ span {
 }
 
 
-
-
-
 @media (max-width: 700px) {
-    .advantages__card{
-    margin-top: 10px;
-}
+    .advantages__card {
+        margin-top: 10px;
+    }
+
     .contacts__container {
         flex-direction: column;
         height: auto;
@@ -1870,25 +1845,27 @@ span {
         padding: 80px 0;
     }
 
-    .advantages__img{
-    width: 88px;
-    height: 88px;
-}
-.advantages__cardtitle{
-    font-size: 20px;
-    line-height: 26px;
-    margin-top: 10px;
-}
-.advantages__card{
-    width: 170px;
-    height: 140px;
-    margin: 15px;
-    /* padding: 0 130px; */
-}
-.advantages__container{
-    flex-direction: row;
-    flex-wrap: wrap;
-}
+    .advantages__img {
+        width: 88px;
+        height: 88px;
+    }
+
+    .advantages__cardtitle {
+        font-size: 20px;
+        line-height: 26px;
+        margin-top: 10px;
+    }
+
+    .advantages__card {
+        width: 170px;
+        height: 140px;
+        margin: 15px;
+    }
+
+    .advantages__container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
 
 
@@ -2063,24 +2040,27 @@ span {
 }
 
 
-@media(max-width:440px){
-.advantages__img{
-    width: 60px;
-    height: 60px;
-}
-.advantages__cardtitle{
-    font-size: 16px;
-    line-height: 24px;
-    margin-top: 5px;
-}
-.advantages__card{
-    width: 130px;
-    height: 120px;
-}
-.advantages__container{
-    flex-direction: row;
-    flex-wrap: wrap;
-}
+@media(max-width:440px) {
+    .advantages__img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .advantages__cardtitle {
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 5px;
+    }
+
+    .advantages__card {
+        width: 130px;
+        height: 120px;
+    }
+
+    .advantages__container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
 
 
